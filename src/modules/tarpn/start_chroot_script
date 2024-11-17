@@ -11,6 +11,8 @@ export LC_ALL=C
 
 source /common.sh
 
+unpack /filesystem/home/pi /home/"${BASE_USER}" "${BASE_USER}"
+
 apt-get update
 
 # in case we are building from a regular raspbian image instead of the lite one...
